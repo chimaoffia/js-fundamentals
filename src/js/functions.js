@@ -75,6 +75,7 @@ console.log(retirement);
 
 // function expression  are just functions that are assign to a variable.
 // the different between function decrelation and function expression is hoisting.
+// it a synthetic sugar.
 
 const getuser = function() {
 

@@ -1,6 +1,9 @@
-dolphins = Math.floor(96 + 108 + 89 / 3);
+let dolphins = Math.floor(96 + 108 + 89 ) /3;
+console.log(dolphins)
 
-koalas = Math.floor(88 + 91 + 110 / 3);
+
+let koalas = Math.floor(88 + 91 + 110 / 3);
+console.log(koalas)
 
 // console.log(dolphins)
 
@@ -18,8 +21,8 @@ koalas = Math.floor(88 + 91 + 110 / 3);
 
 //  3
 
-dolphinsScores = Math.floor(97 + 112 + 101 / 3);
-koalasScore = Math.floor(109 + 95 + 123 / 3);
+let dolphinsScores = Math.floor(97 + 112 + 101 / 3);
+let koalasScore = Math.floor(109 + 95 + 123 / 3);
 
 // console.log(dolphinsScores)
 // console.log(koalasScore)
@@ -35,15 +38,17 @@ if (dolphinsScores > koalasScore && dolphinsScores > 100) {
 // 4
 
 
-dolphinsTeam = Math.floor(97 + 112 + 101 / 3);
-koalasTeam = Math.floor(109 + 95 + 106 / 3);
+let dolphinsTeam = Math.floor(9 + 12 + 10 / 3);
+let koalasTeam = Math.floor(10 + 95 + 16 / 3);
 
 
 if (dolphinsTeam > koalasTeam && dolphinsTeam > 100) {
     console.log(`TEAM DOLPHINS WITH THE SCORE OF ${dolphinsTeam} WON`)
 }else if (dolphinsTeam < koalasTeam && koalasTeam > 100) {
     console.log(`TEAM KOALAS WITH THE SCORE OF ${koalasTeam} WON`)   
-}else {
+}else if (dolphinsTeam === koalasTeam && dolphinsTeam >= 100) {
     console.log(`it is a draw`)
-};
+}else {
+    console.log('no team wins')
+}
 
