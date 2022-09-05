@@ -1,4 +1,4 @@
-// function declearation
+// function decleration
 
 function greet() {
     return 'hello chima';

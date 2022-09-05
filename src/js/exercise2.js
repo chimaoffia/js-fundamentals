@@ -53,14 +53,71 @@ for(i = 0; i < friends.length; i++) {
 
 
 
-const staffs = [
-    'Christian', 'Elijah', 'Gideon', 'Alex', 'Franka','Aziz',
-'Jessica', 'Rose', 'Naomi', 'Lovina', 'Chidera'
-];
+const staffs = ['Christian', 'Elijah', 'Gideon', 'Alex', 'Franka','Aziz',
+'Jessica', 'Rose', 'Naomi', 'Lovina', 'Chidera'];
 
 for(i = 0; i < staffs.length; i++) {
     // console.log(staffs[i])
-    if(staffs[i] === 'christian') {
-        console.log(`${staffs[i]} na man you be.`)
+    if(staffs[i] === 'Alex') {
+        console.log(`${staffs[i]} is my name.`)
     }
+}
+
+
+
+
+
+
+
+
+const wookers = ['chuks', 'jessy', 'franka', 'chidera','aziz', 
+'Jessica', 'Rose', 'Naomi', 'Lovina'];
+
+for(i =0; i < wookers.length; i++) {
+    if(wookers[i] === 'aziz') {
+        console.log(`i am ${wookers[i]}`)
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+function dateOfBirth() {
+    let userAge = Number(prompt('please enter your date of birth'))
+    let currentYear = 2022
+    let age = currentYear - userAge
+    return age
+}
+
+let age = dateOfBirth()
+
+function checkEligibility(userAge) {
+    if (userAge >= 18) {
+        console.log('welcome to the party')
+    }else {
+        console.log('sorry you are not allowed')
+    }
+};
+
+
+
+
+
+
+
+
+
+function userLogin(){
+    let username = prompt('please enter your username')
+    let userPassword =  prompt('please enter your password')
 }
