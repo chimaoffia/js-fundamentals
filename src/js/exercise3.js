@@ -42,7 +42,7 @@ const chima = {
     fullNname: 'chima offia',
     weight: 95,
     height: 1.88,
-    chimaBmi: 95 / (1.88 * 2),
+    chimaBmi: Math.floor(95 / (1.88 * 2)),
 };
 
 // console.log(chima.chimaBmi);
@@ -51,7 +51,7 @@ const mike = {
     fullNname: 'mike mathias',
     weight: 77,
     height: 1.69,
-    mikeBmi: 77 / (1.69 * 2),
+    mikeBmi: Math.floor(77 / (1.69 * 2)),
 };
 
 // question 1 when i created mikebmi in an object and called weight the value was empty,why?
@@ -62,3 +62,31 @@ if (chima.chimaBmi > mike.mikeBmi) {
         `chima bmi is ${chima.chimaBmi} is higher than mike bmi ${mike.mikeBmi}`
     );
 }
+
+// whileloop
+
+// let password = 'alpha';
+// let userpassword = prompt('please enter your password');
+// while (password !== userpassword) {
+//     userpassword = prompt('sorry,wrong answer.try again');
+// }
+// console.log("welcome i'm grateful");
+// 2
+// let userIput = prompt('say something');
+// while (true) {
+//     userIput = prompt(userIput);
+//     if (userIput === 'stop that') {
+//         alert('sorry, i was joking with you');
+//         break;
+//     }
+// }
+
+// 3
+
+// let userAge = Number(prompt('please enter your age'));
+// while (!userAge) {
+//     userAge = Number(prompt('invalid age try again'));
+
+// }
+
+// assignment
