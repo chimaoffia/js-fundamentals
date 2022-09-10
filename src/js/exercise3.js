@@ -86,7 +86,42 @@ if (chima.chimaBmi > mike.mikeBmi) {
 // let userAge = Number(prompt('please enter your age'));
 // while (!userAge) {
 //     userAge = Number(prompt('invalid age try again'));
-
+// }
+// if (userAge >= 18) {
+//     console.log('you are eligible');
+// } else {
+//     console.log('sorry you are not eligible');
 // }
 
 // assignment
+// giving an array of const numbers = [1,2,3,4,5,6,7,8,9];
+//  loop through this and give me the square root of each
+// of them in a saperate array.
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const arr = [];
+
+// for (i = 0; i < numbers.length; i++) {
+//     arr.push(numbers[i] * numbers[i]);
+// }
+
+// console.log(arr);
+
+let computerGuess = Math.floor(Math.random() * 10);
+// console.log(computerGuess);
+let userGuess = Number(prompt('please guess a number'));
+let guessCounter = 1;
+
+while (computerGuess !== userGuess) {
+    guessCounter++;
+    if (userGuess > computerGuess) {
+        userGuess = Number(prompt('oops number guessed is too high.try again'));
+    } else {
+        userGuess = Number(prompt('oops number guessed is too low.try again'));
+    }
+}
+
+if (computerGuess === userGuess) {
+    console.log(`number matched, you win with ${guessCounter} guess`);
+}

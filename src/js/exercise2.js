@@ -72,37 +72,38 @@
 
 // greet()
 
-function hello(name) {
-    console.log(`hello, welcome ${name}`);
-}
+// function hello(name) {
+//     console.log(`hello, welcome ${name}`);
+// }
 
-hello('chima');
+// hello('chima');
 
-const greet = function (firstName, lastName) {
-    console.log(`${firstName} and ${lastName}`);
-};
+// const greet = function (firstName, lastName) {
+//     console.log(`${firstName} and ${lastName}`);
+// };
 
-greet([3, 4, 7], [4, 4, 6]);
+// greet([3, 4, 7], [4, 4, 6]);
 
-// array
-const scores = [44, 88, 9, 22, 'error'];
-// adding to the last index
-scores.push(66);
+// // array
+// const scores = [44, 88, 9, 22, 'error'];
+// // adding to the last index
+// scores.push(66);
 
-console.log(scores);
+// console.log(scores);
 
-// unshift is add to the
-// first index and shift or pop remove from the first index
+// // unshift is add to the
+// // first index and shift or pop remove from the first index
 
-scores.unshift(55);
-console.log(scores);
+// scores.unshift(55);
+// console.log(scores);
 
-scores.shift();
-console.log(scores);
+// scores.shift();
+// console.log(scores);
 
-console.log(scores.length);
-console.log(scores[scores.length - 1]);
+// console.log(scores.length);
+// console.log(scores[scores.length - 1]);
 
+//
 const studentScores = [88, 40, 80, 5, 3, 7, 19];
 
 const evenNumbers = [];
