@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+}
+.sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.btn-big {
+  padding: 50px;
+  border-radius: 50%;
+}
+
+.btn-minus {
+  background-color: plum;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.btn-add {
+  background-color: plum;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
