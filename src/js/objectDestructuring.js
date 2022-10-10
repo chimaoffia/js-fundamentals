@@ -75,4 +75,17 @@ console.log(guest1);
 let guest2 = restaurant.numOfGuest || 15;
 console.log(guest2);
 
+// nullish coalicing
+
+const guest3 = restaurant.numOfGuest ?? 13;
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// console.log(menu);
+
+// for (let item of menu) console.log(item);
+for (let [index, element] of menu.entries()) {
+    // console.log(item);
+    console.log(`${index + 1}`, element);
+}
+
 // and look for falsely part
