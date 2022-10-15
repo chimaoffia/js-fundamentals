@@ -88,4 +88,50 @@ for (let [index, element] of menu.entries()) {
     console.log(`${index + 1}`, element);
 }
 
-// and look for falsely part
+const friends = ['chima', 'mike', 'chuks'];
+for (let [index, elem] of friends.entries()) {
+    console.log(`${index + 1} ${elem}`);
+}
+
+const myFriends = {
+    firstName: 'Chuks',
+    lastName: 'Nnamani',
+    age: 29,
+    profession: 'Accountant',
+};
+
+for (let myFriend of Object.keys(myFriends)) {
+    console.log(myFriend);
+}
+for (let myFriend of Object.values(myFriends)) {
+    console.log(myFriend);
+}
+
+for (let friend of Object.entries(myFriends)) {
+    console.log(friend);
+}
+// it returned an array so we distructure it with an array.
+
+for (let [key, value] of Object.entries(myFriends)) {
+    console.log(key, value);
+}
+
+const staffs = {
+    firstName: 'offia',
+    lastName: 'chima',
+    position: 'general staff',
+    age: 28,
+    profession: 'developer',
+};
+
+for (let staff of Object.keys(staffs)) {
+    console.log(staff);
+}
+
+for (let staff of Object.values(staffs)) {
+    console.log(staff);
+}
+
+for (let staff of Object.entries(staffs)) {
+    console.log(staff);
+}
