@@ -26,15 +26,15 @@ console.log(airline.slice(-2));
 // last indexof
 
 const checkMiddleSeat = function (seat) {
-    const availableSeat = seat.lastIndexOf('B');
-    if (availableSeat == seat) {
+    const availableSeat = seat.slice(-1);
+    if (availableSeat == 'B' || availableSeat == 'E') {
         console.log('yes the middle seat is available');
     } else {
         console.log('ooops not available');
     }
 };
 
-checkMiddleSeat('12B');
+checkMiddleSeat('112B');
 checkMiddleSeat('15A');
 checkMiddleSeat('23E');
 
@@ -66,8 +66,33 @@ console.log(nickname.padStart(23, '+'));
 // const card = masterCard.slice(-4);
 // console.log(card.padStart(masterCard.length, '*'));
 
-// const masterCard = function() {
+const masterCard = function (num) {
+    let cardNum = String(num);
+    let card = cardNum.slice(-4);
+    return card.padStart(cardNum.length, '*');
+};
 
-// }
+console.log(masterCard(1234567890975785));
 
-// masterCard()
+// split always return an array
+
+const user = 'vincent offia my oga at the top';
+
+console.log(user.split(' '));
+
+const [first, last, ...others] = user.split(' ');
+console.log(first, last, others);
+
+console.log(others.join(' '));
+
+// creat a  function that accept strings of characters and turn first letter of each string to uppercase
+
+const capital = function (arr) {
+    const another = [];
+    let ar = arr.split(' ');
+    for (let a of ar) {
+        another.push(a[0].toUpperCase() + a.slice(1).toLowerCase());
+    }
+    console.log(another.join(' '));
+};
+capital('chima toChi bEn mike emMa');
