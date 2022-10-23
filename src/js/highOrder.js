@@ -60,3 +60,6 @@ btn.addEventListener('click', () => {
 });
 
 // create a simple app the tells u the kind of cloth to wear depending on weather condition on a daily
+
+// tips. check the weather condition of a week from google weather,
+//  it will have and input that ask the weather conditon
